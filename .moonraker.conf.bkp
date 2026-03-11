@@ -62,19 +62,10 @@ origin = https://github.com/kyleisah/Klipper-Adaptive-Meshing-Purging.git
 managed_services = klipper
 primary_branch = main
 
-[update_manager moonraker-obico]
-type = git_repo
-path = /home/jpwolfe/moonraker-obico
-origin = https://github.com/TheSpaghettiDetective/moonraker-obico.git
-env = /home/jpwolfe/moonraker-obico/../moonraker-obico-env/bin/python
-requirements = requirements.txt
-install_script = install.sh
-managed_services = 
-	moonraker-obico
-
 [update_manager octoapp]
 type = git_repo
 channel = beta
+primary_branch = release
 path = /home/jpwolfe/octoapp
 origin = https://github.com/crysxd/OctoApp-Plugin.git
 env = /home/jpwolfe/octoapp-env/bin/python
@@ -129,4 +120,14 @@ path = ~/klipper-backup
 origin = https://github.com/Staubgeborener/klipper-backup.git
 managed_services = moonraker
 primary_branch = main
+
+[update_manager moonraker-obico]
+type = git_repo
+path = /home/jpwolfe/moonraker-obico
+origin = https://github.com/TheSpaghettiDetective/moonraker-obico.git
+env = /home/jpwolfe/moonraker-obico/../moonraker-obico-env/bin/python
+requirements = requirements.txt
+install_script = install.sh
+managed_services = 
+	moonraker-obico
 
